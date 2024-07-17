@@ -85,7 +85,7 @@ nav ul li a:hover {
     justify-content: center;
     width: 100px; /* Tamaño original del círculo */
     height: 100px; /* Tamaño original del círculo */
-    border: 2px solid #007bff;
+    border: 2px solid #4CAF50;
     border-radius: 50%;
     margin: 6px; /* Reducir el margen */
     text-align: center;
@@ -94,7 +94,7 @@ nav ul li a:hover {
 }
 
 .activity-item:hover {
-    background-color: #007bff;
+    background-color: #4CAF50;
     color: #fff;
 }
 

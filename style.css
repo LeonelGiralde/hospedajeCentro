@@ -7,12 +7,14 @@ body {
     flex-direction: column;
     min-height: 100vh;
     overflow-x: hidden; /* Evitar el scroll horizontal */
+    font-size: 0.8rem; /* Reducir el tamaño de la fuente en general */
+    font-weight: 100;
 }
 
 header {
     background-color: #797978;
     color: white;
-    padding: 20px;
+    padding: 10px; /* Reducir el padding */
     text-align: center;
     width: 100%;
     box-sizing: border-box; /* Incluir el padding en el ancho total */
@@ -28,9 +30,9 @@ header {
 }
 
 .logo img {
-    width: 50px; /* Ajusta según sea necesario */
+    width: 30px; /* Ajusta según sea necesario */
     height: auto;
-    margin-right: 20px; /* Espacio entre el logo y el texto */
+    margin-right: 10px; /* Espacio entre el logo y el texto */
 }
 
 nav {
@@ -49,12 +51,13 @@ nav ul {
 }
 
 nav ul li {
-    padding: 14px 20px;
+    padding: 8px 10px; /* Reducir el padding */
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
+    font-size: 1rem; /* Reducir el tamaño de la fuente */
 }
 
 nav ul li a:hover {
@@ -66,7 +69,7 @@ nav ul li a:hover {
     cursor: pointer;
     font-size: 1.5em;
     color: white;
-    padding: 14px 20px;
+    padding: 8px 10px; /* Reducir el padding */
 }
 
 .activity-icons {
@@ -80,11 +83,11 @@ nav ul li a:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 120px;
-    height: 120px;
+    width: 100px; /* Tamaño original del círculo */
+    height: 100px; /* Tamaño original del círculo */
     border: 2px solid #007bff;
     border-radius: 50%;
-    margin: 10px;
+    margin: 6px; /* Reducir el margen */
     text-align: center;
     background-color: #e9ecef;
     transition: background-color 0.3s ease;
@@ -96,31 +99,40 @@ nav ul li a:hover {
 }
 
 .activity-item i {
-    font-size: 2em;
-    margin-bottom: 10px;
+    font-size: 1.8em; /* Modifica el tamaño de los iconos según sea necesario */
+    margin-bottom: 6px;
 }
+
 
 .activity-item p {
     margin: 0;
+    font-size: 0.6em; /* Reducir el tamaño del texto */
 }
 
 main {
     width: 100%;
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
+    max-width: 600px; /* Reducir el ancho máximo */
+    margin: 40px auto; /* Aumentar la separación entre secciones */
+    padding: 10px; /* Reducir el padding */
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     flex: 1;
+    font-size: 1.0rem;
 }
 
 h2 {
     color: #333;
+    font-size: 1.1em; /* Reducir el tamaño del título */
+    border-bottom: 2px solid #4CAF50; /* Subrayado */
+    padding-bottom: 5px;
+    display: inline-block;
+    width: 100%; /* Ocupa el 100% del contenedor */
+    box-sizing: border-box;
 }
 
 #mapa {
-    margin-top: 20px;
+    margin-top: 20px; /* Reducir el margen */
 }
 
 .map-container {
@@ -129,34 +141,45 @@ h2 {
     padding-top: 56.25%; /* Aspect ratio 16:9 */
 }
 
+section{
+    padding-bottom: 20px;
+}
+
+section h2{
+    font-size: 2.0rem;
+}
+
 .map-container iframe {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 80%;
     height: 100%;
-    border: 0;
+    border: 5px;
 }
 
 .carousel-inner img {
-    height: 500px;
+    height: 350px; /* Reducir la altura de las imágenes del carrusel */
     object-fit: cover;
+    width: auto;
 }
 
 .contact-info {
     display: flex;
     justify-content: space-around;
-    margin-bottom: 20px;
+    margin: 20px;
 }
 
 .contact-item {
     text-align: center;
+    
 }
 
 .contact-item i {
-    font-size: 24px;
+    font-size: 20px; /* Reducir el tamaño del icono */
     color: #4CAF50;
     margin-bottom: 8px;
+    
 }
 
 .contact-item a {
@@ -165,35 +188,37 @@ h2 {
 }
 
 .form-container {
-    margin-top: 20px;
+    margin-top: 30px; /* Aumentar el margen */
 }
 
 label {
     display: block;
     margin-bottom: 8px;
     font-weight: bold;
+    font-size: 0.7em; /* Reducir el tamaño del texto */
 }
 
 input[type="text"],
 input[type="email"],
 textarea {
     width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
+    padding: 8px; /* Reducir el padding */
+    margin-bottom: 15px; /* Reducir el margen */
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
+    font-size: 0.7em; /* Reducir el tamaño de la fuente */
 }
 
 input[type="submit"] {
     background-color: #4CAF50;
     color: white;
     border: none;
-    padding: 10px 20px;
+    padding: 8px 15px; /* Reducir el padding */
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 0.8em; /* Reducir el tamaño del texto */
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 4px;
@@ -213,6 +238,7 @@ footer {
     box-sizing: border-box;
     position: relative;
     bottom: 0;
+    font-size: 0.8rem;
 }
 
 @media (max-width: 768px) {
@@ -236,4 +262,3 @@ footer {
         text-align: center; /* Centrar el texto */
     }
 }
-

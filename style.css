@@ -12,8 +12,8 @@ body {
 }
 
 header {
-    background-color: #797978;
-    color: white;
+    background-color: #708871;
+    color: #FEF3E2;
     padding: 10px; /* Reducir el padding */
     text-align: center;
     width: 100%;
@@ -37,7 +37,7 @@ header {
 
 nav {
     width: 100%;
-    background-color: #333;
+    background-color: #708871;
     box-sizing: border-box;
 }
 
@@ -55,14 +55,15 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: #FEF3E2;
     text-decoration: none;
     font-size: 1rem; /* Reducir el tamaño de la fuente */
 }
 
 nav ul li a:hover {
-    background-color: #4CAF50;
-}
+    background-color: #FEF3E2;
+    color:#708871 ;
+} 
 
 .menu-toggle {
     display: none; /* Ocultar el botón del menú en dispositivos grandes */
@@ -85,7 +86,7 @@ nav ul li a:hover {
     justify-content: center;
     width: 100px; /* Tamaño original del círculo */
     height: 100px; /* Tamaño original del círculo */
-    border: 2px solid #4CAF50;
+    border: 2px solid #708871;
     border-radius: 50%;
     margin: 6px; /* Reducir el margen */
     text-align: center;
@@ -94,7 +95,7 @@ nav ul li a:hover {
 }
 
 .activity-item:hover {
-    background-color: #4CAF50;
+    background-color: #708871;
     color: #fff;
 }
 
@@ -124,7 +125,7 @@ main {
 h2 {
     color: #333;
     font-size: 1.1em; /* Reducir el tamaño del título */
-    border-bottom: 2px solid #4CAF50; /* Subrayado */
+    border-bottom: 2px solid #708871; /* Subrayado */
     padding-bottom: 5px;
     display: inline-block;
     width: 100%; /* Ocupa el 100% del contenedor */
@@ -230,7 +231,7 @@ input[type="submit"]:hover {
 }
 
 footer {
-    background-color: #333;
+    background-color: #708871;
     color: white;
     text-align: center;
     padding: 10px;
